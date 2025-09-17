@@ -26,7 +26,9 @@ class CategoryPag extends StatelessWidget {
             icon: const Icon(Icons.search),
           ),
         ],
+
         // نتحكم في الون AppBar حسب الحالة
+        //  flexibleSpace: تجعل ال الكونتينر يتمدد وياخد نفس حجم الاب بار
         flexibleSpace: BlocBuilder<Cubitweather, WeatherState>(
           builder: (context, state) {
             if (state is SuccessState) {

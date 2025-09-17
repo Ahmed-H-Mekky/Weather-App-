@@ -7,7 +7,6 @@ import '../cubits/cubit weather/cubitweather.dart';
 
 class CustomerMaterial extends StatelessWidget {
   const CustomerMaterial({super.key});
-
   @override
   Widget build(BuildContext context) {
     return BlocBuilder<Cubitweather, WeatherState>(
@@ -18,7 +17,6 @@ class CustomerMaterial extends StatelessWidget {
             .watch<Cubitweather>()
             .modelWeather
             ?.conditions;
-
         return MaterialApp(
           debugShowCheckedModeBanner: false,
           title: 'Flutter Weather',
